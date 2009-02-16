@@ -1,0 +1,37 @@
+--- #YAML:1.0
+name:                   App-Maisha-Plugin-PingFM
+version:                0.06
+abstract:               A Maisha plugin for ping.fm
+author:
+  - Barbie <barbie@cpan.org>
+
+license:                perl
+distribution_type:      module
+installdirs:            site
+
+requires:
+  App::Maisha:              0.06
+  Class::Accessor::Fast:    0
+  Net::PingFM:              0
+  Test::More:               0.47
+recommends:
+  Test::More:               0.47
+  Test::Pod:                1.00
+  Test::Pod::Coverage:      0.08
+  Test::CPAN::Meta:         0.12
+build_requires:
+  Test::More:               0.47
+
+provides:
+  App::Maisha::Plugin::PingFM:
+    file: lib/App/Maisha/Plugin/PingFM.pm
+    version: 0.01
+no_index:
+  directory:
+    - t
+    - examples
+
+meta-spec:
+   version: 1.4
+   url: http://module-build.sourceforge.net/META-spec-v1.4.html
+generated_by: Hand 1.0

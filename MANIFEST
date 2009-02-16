@@ -1,0 +1,9 @@
+Changes
+lib/App/Maisha/Plugin/PingFM.pm
+Makefile.PL
+MANIFEST
+META.yml
+t/01load.t
+t/90podtest.t
+t/91podcover.t
+t/94metatest.t
