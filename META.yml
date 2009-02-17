@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                   App-Maisha-Plugin-PingFM
-version:                0.06
+version:                0.02
 abstract:               A Maisha plugin for ping.fm
 author:
   - Barbie <barbie@cpan.org>
@@ -25,7 +25,7 @@ build_requires:
 provides:
   App::Maisha::Plugin::PingFM:
     file: lib/App/Maisha/Plugin/PingFM.pm
-    version: 0.01
+    version: 0.02
 no_index:
   directory:
     - t

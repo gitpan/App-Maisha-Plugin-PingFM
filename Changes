@@ -1,5 +1,9 @@
 # Changes log for App-Maisha-Plugin-PingFM
 ==========================================
 
-0.01    current
+0.02    17/02/2009
+	- added README to MANIFEST.
+	- fixed META.yml versions
+
+0.01    16/02/2009
         - Initial release.

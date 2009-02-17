@@ -3,7 +3,7 @@ package App::Maisha::Plugin::PingFM;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 #----------------------------------------------------------------------------
 # Library Modules
@@ -102,8 +102,8 @@ instance only the update method is available.
 There are no known bugs at the time of this release. However, if you spot a
 bug or are experiencing difficulties that are not explained within the POD
 documentation, please submit a bug to the RT system (see link below). However,
-it would help greatly if you are able to pinpoint problems or even supply a 
-patch. 
+it would help greatly if you are able to pinpoint problems or even supply a
+patch.
 
 Fixes are dependant upon their severity and my availablity. Should a fix not
 be forthcoming, please feel free to (politely) remind me by sending an email
