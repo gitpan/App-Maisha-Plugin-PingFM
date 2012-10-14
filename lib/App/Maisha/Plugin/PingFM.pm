@@ -3,7 +3,7 @@ package App::Maisha::Plugin::PingFM;
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 #----------------------------------------------------------------------------
 # Library Modules
@@ -22,24 +22,30 @@ __PACKAGE__->mk_accessors($_) for qw(api);
 
 sub login {
     my ($self,$user,$pass) = @_;
-    my $api = Net::PingFM->new(
-        user_key    => $user,
-        api_key     => $pass,
-        source      => $self->{source},
-        useragent   => $self->{useragent},
-        clientname  => $self->{clientname},
-        clientver   => $self->{clientver},
-        clienturl   => $self->{clienturl}
-    );
+    my $api;
 
-    return 0    unless($api);
+    eval {
+        $api = Net::PingFM->new(
+            user_key    => $user,
+            api_key     => $pass,
+            source      => $self->{source},
+            useragent   => $self->{useragent},
+            clientname  => $self->{clientname},
+            clientver   => $self->{clientver},
+            clienturl   => $self->{clienturl}
+        );
+    };
+
+    unless($api) {
+        warn "Unable to establish connection to PingFM API\n";
+        return 0;
+    }
 
     $self->api($api);
     return 1;
 }
 
-sub api_update
-{
+sub api_update {
     my $self = shift;
     my $text = join(' ',@_);
     $self->api->post($text, {post_method => 'status'});
@@ -105,7 +111,7 @@ documentation, please submit a bug to the RT system (see link below). However,
 it would help greatly if you are able to pinpoint problems or even supply a
 patch.
 
-Fixes are dependant upon their severity and my availablity. Should a fix not
+Fixes are dependent upon their severity and my availability. Should a fix not
 be forthcoming, please feel free to (politely) remind me by sending an email
 to barbie@cpan.org .
 
@@ -127,13 +133,14 @@ place.
 
 =head1 AUTHOR
 
-  Copyright (c) 2009 Barbie <barbie@cpan.org> Miss Barbell Productions.
+  Barbie, <barbie@cpan.org>
+  for Miss Barbell Productions <http://www.missbarbell.co.uk>.
 
-=head1 LICENSE
+=head1 COPYRIGHT AND LICENSE
 
-  This program is free software; you can redistribute it and/or modify it
-  under the same terms as Perl itself.
+  Copyright (C) 2009-2012 by Barbie
 
-  See http://www.perl.com/perl/misc/Artistic.html
+  This module is free software; you can redistribute it and/or
+  modify it under the Artistic License v2.
 
 =cut

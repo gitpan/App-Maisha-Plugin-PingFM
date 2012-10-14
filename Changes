@@ -1,9 +1,22 @@
 # Changes log for App-Maisha-Plugin-PingFM
 ==========================================
 
-0.02    17/02/2009
+0.03    2012-10-14
+        - spelling fix. (thanks to Florian Schlichting & Gregor Herrmann).
+        - change file dates changed to meet W3CDTF standards.
+        - reworked Makefile.PL for clarity.
+        - added minimum perl version (5.006).
+	- added META.json.
+	- updated test suite.
+        - License updated to Artistic License v2.0.
+        - added minimum perl version (5.006).
+        - META tests no longer require specific versions.
+        - implemented Perl::Critic suggestions.
+	- added login and connection protection.
+
+0.02    2009-02-17
 	- added README to MANIFEST.
 	- fixed META.yml versions
 
-0.01    16/02/2009
+0.01    2009-02-16
         - Initial release.
