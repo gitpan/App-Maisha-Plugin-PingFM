@@ -8,7 +8,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     AUTHOR              => 'Barbie <barbie@cpan.org>',
-    NAME                => 'App::Maisha::Plugin::PingFM',
+    NAME                => 'App-Maisha-Plugin-PingFM',
     VERSION_FROM        => 'lib/App/Maisha/Plugin/PingFM.pm',
     ABSTRACT            => 'A Maisha plugin for ping.fm',
     NO_META             => 1,

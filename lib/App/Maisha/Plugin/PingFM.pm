@@ -3,7 +3,7 @@ package App::Maisha::Plugin::PingFM;
 use strict;
 use warnings;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 #----------------------------------------------------------------------------
 # Library Modules
@@ -140,7 +140,7 @@ place.
 
   Copyright (C) 2009-2012 by Barbie
 
-  This module is free software; you can redistribute it and/or
+  This distribution is free software; you can redistribute it and/or
   modify it under the Artistic License v2.
 
 =cut

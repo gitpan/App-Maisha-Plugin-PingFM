@@ -1,5 +1,6 @@
 Changes
 lib/App/Maisha/Plugin/PingFM.pm
+LICENSE
 Makefile.PL
 MANIFEST
 META.json
