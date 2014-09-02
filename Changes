@@ -1,6 +1,12 @@
 Changes log for App-Maisha-Plugin-PingFM
 ========================================
 
+0.05    2014-09-02
+        - fixed license fields in META.json to be lists.
+        - fixed distribution name in Makefile.PL.
+        - extended test suite.
+        - added plugin tests.
+
 0.04    2014-05-17
         - fixed distribution name in META.
         - added LICENSE file.

@@ -1,19 +1,19 @@
 {
     "name": "App-Maisha-Plugin-PingFM",
-    "version": "0.04",
+    "version": "0.05",
     "abstract": "A Maisha plugin for ping.fm",
     "author": [
         "Barbie (BARBIE) <barbie@cpan.org>"
     ],
 
-    "license": "artistic_2",
+    "license": [ "artistic_2" ],
     "dynamic_config" : 0,
     "release_status" : "stable",
     "meta-spec": {
         "version": "2",
         "url": "http://search.cpan.org/dist/CPAN-Meta/lib/CPAN/Meta/Spec.pm"
     },
-    "generated_by": "Hand 1.0",
+    "generated_by": "The Hand of Barbie 1.0",
     "keywords" : [
         "pingfm",
         "cli",
@@ -48,7 +48,7 @@
     "provides": {
         "App::Maisha::Plugin::PingFM": {
             "file": "lib/App/Maisha/Plugin/PingFM.pm",
-            "version": "0.04"
+            "version": "0.05"
         }
     },
     "no_index": {
@@ -56,7 +56,7 @@
     },
 
     "resources": {
-        "license": "http://www.perlfoundation.org/artistic_license_2_0",
+        "license": [ "http://www.perlfoundation.org/artistic_license_2_0" ],
         "bugtracker": { "web": "http://rt.cpan.org/Public/Dist/Display.html?Name=App-Maisha-Plugin-PingFM" },
         "repository": {
             "url": "git://github.com/barbie/app-maisha-plugin-pingfm.git",
